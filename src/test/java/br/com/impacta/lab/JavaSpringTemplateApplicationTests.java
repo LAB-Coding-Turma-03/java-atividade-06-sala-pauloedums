@@ -23,7 +23,7 @@ class JavaSpringTemplateApplicationTests {
 		Produto produtoEncontrado = Produto.buscarProdutoPeloId(listaDeProdutos, 1);
 		
 		
-		assertEquals("Camisa", produtoEncontrado.descricao);
+		assertEquals("Camisa", produtoEncontrado.getDescricao());
 		
 	}
 
@@ -41,7 +41,7 @@ class JavaSpringTemplateApplicationTests {
 		
 		Produto produtoEncontrado = Produto.buscarProdutoPeloId(listaDeProdutos, 15);
 		
-		assertEquals("Tenis", produtoEncontrado.descricao);
+		assertEquals("Tenis", produtoEncontrado.getDescricao());
 	}
 	
 }
